@@ -1,30 +1,28 @@
 import React from 'react';
-
 import {
   App ,
-  Button
+  View
 } from 'framework7-react';
+import bottomNavigation from "./home/bottomApps";
 
 import routes from '../js/routes';
+import BottomApps from "./home/bottomApps";
+
+const f7params = {
+  name: 'HybridOSCore',
+  theme: 'auto',
+  routes: routes,
+}
 
 export default class extends React.Component {
   constructor() {
     super();
-
-    this.state = {
-      // Framework7 Parameters
-      f7params: {
-        name: 'HybridOSCore', // App name
-        theme: 'auto', // Automatic theme detection
-        // App routes
-        routes: routes,
-      }
-    }
   }
+
   render() {
     return (
-      <App params={ this.state.f7params } >
-        <Button fill>Button</Button>
+      <App params={f7params} >
+        <BottomApps />
       </App>
     )
   }
