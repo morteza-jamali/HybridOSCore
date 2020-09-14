@@ -3,26 +3,17 @@ import {
   App ,
   View
 } from 'framework7-react';
-import bottomNavigation from "./home/bottomApps";
-
-import routes from '../js/routes';
-import BottomApps from "./home/bottomApps";
-
-const f7params = {
-  name: 'HybridOSCore',
-  theme: 'auto',
-  routes: routes,
-}
+import config from "../../app.config";
 
 export default class extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
   }
 
   render() {
     return (
-      <App params={f7params} >
-        <BottomApps />
+      <App params={config} >
+        <View main url="/" />
       </App>
     )
   }
