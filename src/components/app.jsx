@@ -4,6 +4,7 @@ import {
   View
 } from 'framework7-react';
 import config from "../../app.config";
+import BottomNavigation from "./bottomNavigation";
 
 export default class extends React.Component {
   constructor(props) {
@@ -13,7 +14,8 @@ export default class extends React.Component {
   render() {
     return (
       <App params={config} >
-        <View main url="/" />
+        <View main url="/" id="appView"/>
+        <BottomNavigation id="bottomNavigation" />
       </App>
     )
   }

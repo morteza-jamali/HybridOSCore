@@ -9,7 +9,7 @@ export default class AppPage extends React.Component {
     render() {
         return(
             <Page name="app" >
-                This is for test
+                This is for tedst
             </Page>
         );
     }

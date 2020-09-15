@@ -9,7 +9,7 @@ export default class HomePage extends React.Component {
 
     render() {
         return(
-            <Page name="home" >
+            <Page name="home" id="home-page">
                 <BottomApps/>
             </Page>
         );
