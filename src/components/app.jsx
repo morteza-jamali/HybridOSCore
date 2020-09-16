@@ -14,7 +14,7 @@ export default class extends React.Component {
   render() {
     return (
       <App params={config} >
-        <View main url="/" id="appView"/>
+        <View main url="/" id="appView" />
         <BottomNavigation id="bottomNavigation" />
       </App>
     )

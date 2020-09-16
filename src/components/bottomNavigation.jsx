@@ -11,9 +11,9 @@ export default class BottomNavigation extends React.Component {
                 <Link className="bottomNavBTN" type="button" iconMaterial="arrow_back" iconColor="white"
                       href="/app/" />
                 <Link className="bottomNavBTN" type="button" iconMaterial="panorama_fish_eye" iconColor="white"
-                      href="/app/" />
+                      href="/" />
                 <Link className="bottomNavBTN" type="button" iconMaterial="filter_none" iconColor="white"
-                      href="/app/" />
+                      href="/history/" />
             </View>
         );
     }
